@@ -1,0 +1,189 @@
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 280px;
+  height: 60px;
+  border-radius: 0 0 10px 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  border-radius: 10px;
+  -webkit-transition: all 0.8s ease 0.2s;
+  transition: all 0.8s ease 0.2s;
+  -webkit-box-shadow: 0 0 40px rgba(235, 125, 75, 0.6);
+          box-shadow: 0 0 40px rgba(235, 125, 75, 0.6);
+}
+
+.btn:hover .waves {
+  top: -50px;
+}
+
+.text {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-family: "Titillium Web", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 280px;
+  background-color: #eb7d4b;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.waves::after,
+.waves::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 250%;
+  height: 250%;
+  -webkit-transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+          transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+}
+
+.waves::before {
+  background-color: #000;
+  border-radius: 48%;
+  -webkit-animation: waves 5s infinite linear;
+          animation: waves 5s infinite linear;
+}
+
+.waves::after {
+  border-radius: 44%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-animation: waves 10s infinite linear;
+          animation: waves 10s infinite linear;
+}
+
+@-webkit-keyframes waves {
+  0% {
+    -webkit-transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+            transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+            transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+  }
+}
+
+@keyframes waves {
+  0% {
+    -webkit-transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+            transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+            transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+  }
+}
+.btn_two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 280px;
+  height: 60px;
+  border-radius: 0 0 10px 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn_two:hover {
+  border-radius: 10px;
+  -webkit-transition: all 0.8s ease 0.2s;
+  transition: all 0.8s ease 0.2s;
+  -webkit-box-shadow: 0 0 40px #4973ff;
+          box-shadow: 0 0 40px #4973ff;
+}
+
+.btn_two:hover .waves_two {
+  top: -50px;
+}
+
+.text_two {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-family: "Titillium Web", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.waves_two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 280px;
+  background-color: #4973ff;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.waves_two::after,
+.waves_two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 250%;
+  height: 250%;
+  -webkit-transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+          transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+}
+
+.waves_two::before {
+  background-color: #000;
+  border-radius: 48%;
+  -webkit-animation: waves 5s infinite linear;
+          animation: waves 5s infinite linear;
+}
+
+.waves_two::after {
+  border-radius: 44%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-animation: waves 10s infinite linear;
+          animation: waves 10s infinite linear;
+}
+
+@keyframes waves {
+  0% {
+    -webkit-transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+            transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+            transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+  }
+}
